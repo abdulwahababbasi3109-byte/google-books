@@ -37,6 +37,7 @@ export class BookDao {
           q: query,
           startIndex,
           maxResults: limit,
+          key: process.env.GOOGLE_BOOKS_API_KEY,
         },
       },
     );
